@@ -21,13 +21,6 @@ export const getTask = async (id) => {
 
 export const updateTask = async (id, task) => collection.doc(id).update(task);
 
-// export const updateStatus = async (id, completed) => {
-//   const task = await collection.doc(id).get();
-//   const t = task.data();
-//   // t.completed = completed;
-//   return collection.doc(id).update(t);
-// };
-
 export const deleteTask = (id) => collection.doc(id).delete();
 
 export const fetchTasks = () => {
